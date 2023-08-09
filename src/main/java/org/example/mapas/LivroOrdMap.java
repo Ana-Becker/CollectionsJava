@@ -1,4 +1,4 @@
-package org.example.maps;
+package org.example.mapas;
 
 import java.util.Objects;
 

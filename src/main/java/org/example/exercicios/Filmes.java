@@ -66,6 +66,18 @@ public class Filmes {
             System.out.println(f);
         }
 
+        List<Filme> meusFilmes = new ArrayList<>(){{
+            add(new Filme("A Bela Adormecida", 1959, "Desenho"));
+            add(new Filme("O Poderoso Chefão", 1972, "Drama"));
+            add(new Filme("Um Sonho de Liberdade", 1995, "Drama"));
+            add(new Filme("O Rei Leão", 1994, "Animação"));
+            add(new Filme("O Senhor dos Anéis", 2003, "Fantasia"));
+        }};
+
+        meusFilmes.sort(Comparator.comparing(Filme::getNome));
+        System.out.println();
+        meusFilmes.stream().forEach(System.out::println);
+
 
     }
 }
